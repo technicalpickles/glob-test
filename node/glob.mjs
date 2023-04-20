@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url'
 const [_, __, glob, filename] = process.argv
 if (glob === undefined || filename === undefined) {
   console.error(`Usage: ${
-    relative(process.cwd, fileURLToPath(import.meta.url))
+    relative(process.cwd(), fileURLToPath(import.meta.url))
   } <glob> <filename>`)
   process.exit(1)
 }
