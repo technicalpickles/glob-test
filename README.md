@@ -29,6 +29,18 @@ Using [gobwas/glob](https://github.com/gobwas/glob):
 "foo.py" does not match "**/*.rb"
 ```
 
+## node
+
+Using [isaacs/minimatch](https://github.com/isaacs/minimatch)
+
+```
+❯ node node/glob.mjs "**/*.rb" "glob.rb"
+"glob.rb" does not match "**/*.rb"
+
+❯ node node/glob.mjs "**/*.rb" "foo.py"
+"foo.py" does not match "**/*.rb"
+```
+
 ## Contributing
 
 I can't guarantee how much I will do on this beyond what there is, but happy to review and/or add other folks. I'd like to keep things pretty simple though (unless I change my mind)
