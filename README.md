@@ -34,6 +34,8 @@ Using [gobwas/glob](https://github.com/gobwas/glob):
 Using [isaacs/minimatch](https://github.com/isaacs/minimatch)
 
 ```
+❯ npm install
+
 ❯ node node/glob.mjs "**/*.rb" "glob.rb"
 "glob.rb" does not match "**/*.rb"
 
