@@ -1,0 +1,13 @@
+pre-commit:
+  commands:
+    gofmt:
+      glob: "*.go"
+      run: gofmt -w {staged_files}
+      stage_fixed: true
+    standardrb:
+      glob: "{*.rb,Gemfile}"
+      run: bundle exec standardrb --fix {staged_files}
+      stage_fixed: true
+    yamllint:
+      glob: "{*.yaml,*.yml,.yamllint}"
+      run: yamllint --strict --format colored {staged_files}
