@@ -7,6 +7,7 @@ Different projects use different languages and/or glob implementations. I origin
 
 ## ruby
 
+Using stdlib:
 
 ```
 ❯ ruby ruby/glob.rb "**/*.rb" "glob.rb"
@@ -17,6 +18,8 @@ Different projects use different languages and/or glob implementations. I origin
 ```
 
 ## go
+
+Using [gobwas/glob](https://github.com/gobwas/glob):
 
 ```
 ❯ go run go/glob.go "**/*.rb" "glob.rb"
